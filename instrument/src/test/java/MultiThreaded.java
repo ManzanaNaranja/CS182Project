@@ -33,7 +33,7 @@ public class MultiThreaded {
             }
 
             System.out.println("Thread " + Thread.currentThread().getName() + " produced an event " + map.contains('u'));
-            System.out.println(map.contains('u'));
+            // System.out.println(map.contains('u'));
         }
     };
 }
