@@ -136,9 +136,24 @@ public class NoGuidance implements Guidance {
      * @param thread the thread whose events to handle
      * @return a callback that does nothing.
      */
-    @Override
+@Override
+
     public Consumer<TraceEvent> generateCallBack(Thread thread) {
-        return getCoverage()::handleEvent;
+
+        //return getCoverage()::handleEvent;        //Commented this part
+
+ 
+
+        // Added this part
+
+        return event -> {
+
+            System.out.println("Thread " + thread.getName() + " produced an event " + event.toString());
+
+            getCoverage().handleEvent(event);
+
+        };
+
     }
 
     /**
