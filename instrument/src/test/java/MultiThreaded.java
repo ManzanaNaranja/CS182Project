@@ -32,7 +32,7 @@ public class MultiThreaded {
                 map.add(c);
             }
 
-            System.out.println("I am thread: " + Thread.currentThread().getName());
+            System.out.println("Thread " + Thread.currentThread().getName() + " produced an event " + map.contains('u'));
             System.out.println(map.contains('u'));
         }
     };
