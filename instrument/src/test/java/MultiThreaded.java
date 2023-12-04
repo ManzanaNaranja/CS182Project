@@ -31,6 +31,7 @@ public class MultiThreaded {
             for (char c : this.getName().toCharArray()) {
                 map.add(c);
             }
+            System.out.println("I am thread: " + Thread.currentThread().getName());
             System.out.println(map.contains('u'));
         }
     };
