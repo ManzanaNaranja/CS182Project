@@ -9,8 +9,10 @@ git clone https://github.com/rohanpadhye/JQF.git
 ``` 
 2) Download Maven [Here](https://maven.apache.org/install.html)
 
-3) Run setup Script
-* Type command “./setup.sh” in the JQF directory
+3) Run setup script in the JQF directory
+```
+./setup.sh
+```
 
 ## Fuzzing with JQF
 
