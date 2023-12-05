@@ -11,3 +11,16 @@ git clone https://github.com/rohanpadhye/JQF.git
 
 3) Run setup Script
 * Type command “./setup.sh” in the JQF directory
+
+## Fuzzing with JQF
+
+1. Run /setup.sh in the JQF directory to build JQF
+2. Compile the program under test 
+```
+javac -cp .:$(./scripts/classpath.sh) SimpleTest.java
+```
+3. Run JQF Random for 10 iterations
+
+```
+/bin/jqf-random SimpleTest testSimpleTest 10
+```
